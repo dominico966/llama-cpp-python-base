@@ -10,6 +10,9 @@ llama-cpp-python 라이브러리 재현성을 위한 베이스 프로젝트 템�
 ## 📦 사전 설치
 
 ### 공통
+- `cmake` (필수)
+- `ninja` (필수)
+  - Windows : `winget install --id=Ninja-build.Ninja -e`
 - `uv` (필수)
   - Windows : `winget install uv`
   - Linux : `curl -LsSf https://astral.sh/uv/install.sh | sh`
