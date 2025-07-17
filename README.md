@@ -2,6 +2,9 @@
 
 llama-cpp-python 라이브러리 재현성을 위한 베이스 프로젝트 템플릿
 
+## 테스트환경
+- (Windows) Powershell
+- (Windows) MSYS2 UCRT
 ---
 
 ## 📦 사전 설치
@@ -17,6 +20,10 @@ llama-cpp-python 라이브러리 재현성을 위한 베이스 프로젝트 템�
 
 ### Windows 환경
 - `clang-cl` 또는 `msvc` 컴파일러 필요
+```Makefile
+export CC=clang-cl # << change hear
+export CXX=clang-cl # << change hear
+```
 
 ### Linux 환경
 - `clang` 또는 `gcc` 필요
