@@ -1,0 +1,19 @@
+[project]
+name = "llama-cpp-python-base"
+version = "0.1.0"
+description = "llama-cpp-python base build template"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "flask>=3.1.1",
+    "llama-cpp-python>=0.3.12",
+    "nuitka>=2.7.12",
+    "pip>=25.1.1",
+    "waitress>=3.0.2",
+]
+
+[tool.uv]
+cache-dir = "./.uv_cache"
+
+[project.scripts]
+mycli = "cli.cli:main"
